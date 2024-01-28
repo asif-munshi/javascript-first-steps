@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="title">Quiz.js</h1>
+      </a>
+      <p>Do you know JS? Find out!</p>
+      <div id="score">
+        Score: <span id="correct">0</span> / <span id="completed">0</span>
+      </div>
+    </header>
+
+    <main>
+      <div id="statement"></div>
+      <div id="options">
+        <button name="true" value="true">True</button>
+        <button name="false" value="false">False</button>
+      </div>
+      <div id="explanation" class="hidden"></div>
+      <div id="next-options">
+        <button id="next-question" name="next-question">Next Question</button>
+        <a href="index.html">
+          <button id="back">Back To Home</button>
+        </a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
